@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prospect Check</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Prospect Check</h1>
+
+    <div class="card">
+      <label>Sök företag</label>
+      <input id="q" placeholder='Ex: "Rusta", "5562802115", "47122", "detaljhandel"' />
+
+      <div class="grid">
+        <div>
+          <label>HK-ort</label>
+          <input id="hqCity" placeholder="Stockholm" />
+        </div>
+        <div>
+          <label>Arbetsställe-ort</label>
+          <input id="workCity" placeholder="Stockholm" />
+        </div>
+        <div>
+          <label>Anställda min</label>
+          <input id="empMin" type="number" />
+        </div>
+        <div>
+          <label>Anställda max</label>
+          <input id="empMax" type="number" />
+        </div>
+      </div>
+
+      <button id="searchBtn">Sök</button>
+      <p id="status"></p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <h2>Resultat</h2>
+      </div>
+      <table id="tbl">
+        <thead>
+          <tr>
+            <th>Namn</th>
+            <th>Orgnr</th>
+            <th>SNI</th>
+            <th>HK-ort</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
