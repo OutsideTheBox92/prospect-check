@@ -1,0 +1,66 @@
+body {
+  font-family: system-ui, Arial;
+  background: #f6f7f9;
+  margin: 0;
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e6e8ee;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  color: #444;
+  margin: 8px 0 6px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d8dbe6;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  text-align: left;
+  border-top: 1px solid #eee;
+  padding: 10px;
+  font-size: 14px;
+}
